@@ -1,19 +1,8 @@
 // Create a program that reads a list of expenses amount using user input and prints the total.
-import "dart:io";
 
 void main() {
-  stdout.write("Enter the list length: ");
-  int length = int.parse(stdin.readLineSync()!);
+  List<double> expenses = [1000, 2000, 1200.32, 500.14];
 
-  List<double> expenses = [];
-
-  for (int i = 1; i <= length; i++) {
-    stdout.write("Enter the expenses value of $i item: ");
-    double exp = double.parse(stdin.readLineSync()!);
-    expenses.add(exp);
-  }
-
-  print(expenses);
   print(calculateSum(expenses));
 }
 

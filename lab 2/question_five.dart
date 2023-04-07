@@ -14,10 +14,10 @@ void main() {
 
 void searchName(List<String> name) {
   print("Friends starting with Alphabet A.");
-  for (int i = 0; i < 7; i++) {
-    String temp = name[i];
+  for (int i = 0; i < name.length; i++) {
+    String temp = name[i]; // to store list's value one at a time
     if (temp[0].toLowerCase() == "a") {
-      print(temp);
+      print(name[i]);
     }
   }
 }

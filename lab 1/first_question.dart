@@ -1,9 +1,6 @@
-import "dart:io";
-
 // Write a dart program to check if the number is odd or even.
 void main() {
-  stdout.write("Enter a number: ");
-  int num = int.parse(stdin.readLineSync()!);
+  int num = 2;
 
   if (isEven(num)) {
     print("$num is even number.");
